@@ -1,0 +1,71 @@
+{
+  "user_agent": "windows:nubra-reddit-reply-tracker:1.0 (personal read-only stats tracker)",
+  "request_interval_seconds": 2.0,
+  "max_retries": 5,
+  "backoff_base_seconds": 5,
+  "max_pages_per_user": 10,
+  "auto_refresh_hours": 6,
+  "sync_mode": "browser",
+  "_sync_mode_note": "Default for a fresh database: 'browser' (bookmark on reddit.com + import) or 'direct'. The dashboard's choice is remembered in data/reddit.db.",
+  "browser_sync_max_pages": 3,
+  "browser_sync_delay_seconds": 1.5,
+  "utc_offset_hours": 5.5,
+  "nubra_terms": ["nubra", "nubra.io"],
+  "disclosure_phrases": [
+    "i work at nubra",
+    "i work for nubra",
+    "i work with nubra",
+    "i'm from nubra",
+    "i am from nubra",
+    "i'm on the nubra team",
+    "i am on the nubra team",
+    "i'm part of the nubra team",
+    "i am part of the nubra team",
+    "i'm with nubra",
+    "i am with nubra",
+    "affiliated with nubra",
+    "full disclosure",
+    "disclosure"
+  ],
+  "topic_uses_thread_title": true,
+  "topics": {
+    "Options & Greeks": ["option", "options", "greeks", "delta", "theta", "gamma", "vega", "iv", "implied volatility", "strike", "premium", "expiry", "straddle", "strangle", "option chain", "call", "put", "ce", "pe", "hedge", "payoff", "breakeven"],
+    "Broker comparison": ["broker", "brokers", "zerodha", "upstox", "groww", "dhan", "fyers", "angel one", "kite", "brokerage", "switch broker", "switching", "trading app"],
+    "Algo trading": ["algo", "algos", "algorithmic", "backtest", "backtesting", "paper trade", "paper trading", "forward test", "automated", "automation", "automate", "slippage", "overfit", "overfitting", "quant", "strategy"],
+    "API & SDK help": ["api", "apis", "sdk", "websocket", "python", "endpoint", "uat", "sandbox", "kite connect", "pip install", "totp", "static ip", "rate limit", "error code"],
+    "Market data": ["ohlc", "candle", "candles", "historical data", "tick data", "tick", "open interest", "oi", "market depth", "quotes", "data feed", "ltp", "bhavcopy"]
+  },
+  "competitors": {
+    "Zerodha": ["zerodha", "kite", "kite connect"],
+    "Dhan": ["dhan", "dhanhq"],
+    "Upstox": ["upstox"],
+    "Fyers": ["fyers"],
+    "Angel One": ["angel one", "angelone", "angel broking", "smartapi", "smart api"],
+    "Groww": ["groww"]
+  },
+  "_competitors_note": "Conversation share: each comment by another user (and the thread's own title + text) counts once per brand it mentions. Nubra uses nubra_terms above. Whole words, case-insensitive.",
+  "sentiment": {
+    "positive": ["thanks", "thank you", "thx", "helpful", "will try", "gonna try", "useful", "great", "good point", "makes sense", "appreciate", "appreciated", "agree", "nice", "solid", "this helps", "good advice"],
+    "negative": ["spam", "spammer", "ad", "advert", "advertisement", "shill", "shilling", "promotion", "promotional", "scam", "bot", "paid", "fake", "sponsored", "marketing"]
+  },
+  "_sentiment_note": "Direct replies to my comments: more positive than negative keyword hits = positive, the reverse = negative, otherwise neutral. Replies from my own tracked accounts are ignored.",
+  "subreddit_size_buckets": [
+    [0, "Small (<100k members)"],
+    [100000, "Medium (100k–1M)"],
+    [1000000, "Large (1M+)"]
+  ],
+  "subreddit_info_max_age_hours": 24,
+  "account_health": {
+    "possibly_hidden_ratio": 0.5,
+    "possibly_hidden_min_comments": 3,
+    "at_risk_window_days": 14,
+    "at_risk_min_replies": 3,
+    "at_risk_stuck_share": 0.75,
+    "at_risk_stuck_min_age_hours": 24,
+    "at_risk_removed_share": 0.20,
+    "at_risk_nubra_count": 3,
+    "at_risk_nubra_share": 0.40
+  },
+  "_account_health_note": "Possibly hidden: fewer than possibly_hidden_ratio of an account's recent comments show to logged-out visitors (checked when it has at least possibly_hidden_min_comments). At risk (visible accounts, last at_risk_window_days, at least at_risk_min_replies new replies): at_risk_stuck_share of replies older than at_risk_stuck_min_age_hours sit at <=1 upvote with no replies, or at_risk_removed_share removed by moderators, or at_risk_nubra_count / at_risk_nubra_share mention or link Nubra.",
+  "_topics_note":"Each reply gets the topic with the most keyword matches (whole words, case-insensitive). Ties go to the topic listed first. No matches = 'Other'. If topic_uses_thread_title is true, the thread title is only used when the reply text alone matches nothing."
+}

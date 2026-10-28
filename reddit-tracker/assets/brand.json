@@ -1,0 +1,30 @@
+{
+  "_about": "Brand colours for the dashboard. 'navy' and 'white' were sampled pixel-for-pixel from the Nubra logo (assets/nubra-logo.png). Every value marked as a placeholder below is NOT an official Nubra colour - replace it with the real one when you have it.",
+  "logo": {
+    "navy": "#030712",
+    "white": "#FFFFFF"
+  },
+  "accent": "#6382D9",
+  "_accent_note": "PLACEHOLDER neutral slate blue, used for charts, buttons and highlights. Swap in Nubra's real accent hex.",
+  "status": {
+    "positive": "#2E9E6A",
+    "negative": "#D9534F",
+    "warning": "#C98A1B",
+    "_note": "PLACEHOLDER neutral UI colours for up/down changes and 'removed' badges."
+  },
+  "dark": {
+    "background": "#030712",
+    "surface": "#0C111D",
+    "border": "#1E2433",
+    "text": "#FFFFFF",
+    "muted": "#9D9FA3"
+  },
+  "light": {
+    "background": "#F5F6F7",
+    "surface": "#FFFFFF",
+    "border": "#E1E2E4",
+    "text": "#030712",
+    "muted": "#5F6168"
+  },
+  "_surfaces_note": "Surfaces/borders are mixes of the two logo colours; muted greys are taken from the logo's own anti-aliasing."
+}

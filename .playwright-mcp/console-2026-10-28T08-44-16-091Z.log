@@ -1,0 +1,2 @@
+[  394317ms] [WARNING] WebSocket onclose: code=1006 (abnormal closure), reason="(no close reason)", wasClean=false, state=CONNECTED @ http://localhost:8501/static/js/index.Dlja0TUX.js:28
+[ 1135919ms] [WARNING] WebSocket onclose: code=1006 (abnormal closure), reason="(no close reason)", wasClean=false, state=CONNECTED @ http://localhost:8501/static/js/index.Dlja0TUX.js:28

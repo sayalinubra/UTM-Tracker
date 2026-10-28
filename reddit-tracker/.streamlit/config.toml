@@ -1,0 +1,22 @@
+# Colours mirror assets/brand.json (navy/white from the logo; accent is a placeholder).
+# Switch theme from the ⋮ menu (top right) → Settings. Dark is the default.
+[theme.dark]
+primaryColor = "#6382D9"
+backgroundColor = "#030712"
+secondaryBackgroundColor = "#0C111D"
+textColor = "#FFFFFF"
+borderColor = "#1E2433"
+
+[theme.light]
+primaryColor = "#6382D9"
+backgroundColor = "#F5F6F7"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#030712"
+borderColor = "#E1E2E4"
+
+[client]
+# Only the viewer menu (Settings, Rerun, Print...) - no Deploy or developer options.
+toolbarMode = "viewer"
+
+[browser]
+gatherUsageStats = false

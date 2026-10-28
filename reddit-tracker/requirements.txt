@@ -1,0 +1,4 @@
+requests>=2.31
+streamlit>=1.66
+plotly>=5.19
+pandas>=2.0

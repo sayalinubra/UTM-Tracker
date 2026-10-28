@@ -1,0 +1,16 @@
+# One Reddit username per line. "u/name" and "/u/name" are fine.
+# Lines starting with # are ignored. Usernames only - never put passwords here.
+# Edit this file any time, then click "Sync now" in the dashboard.
+
+TraderIn93
+TheFinanceGuy67
+justanothertrader80
+candlesandstock
+tradingguy588
+Legal_Attempt5405
+
+# Spelling variants that appear in the UTM sheet
+TraderIn
+tradinguy58
+Legal_Attempt540
+bidaskbys20

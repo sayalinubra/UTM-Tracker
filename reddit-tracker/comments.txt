@@ -1,0 +1,7 @@
+# Optional: one Reddit COMMENT link per line. These are always tracked,
+# even if they're old or posted from an account not in accounts.txt.
+# Works with www.reddit.com, old.reddit.com, new.reddit.com and share links (reddit.com/r/<sub>/s/...).
+# Lines starting with # are ignored.
+#
+# Example:
+# https://www.reddit.com/r/IndianStockMarket/comments/1x4o3qt/update_on_my_last_about_how_spam_calls_started/abc1234/
